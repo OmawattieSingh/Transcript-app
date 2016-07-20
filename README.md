@@ -1,0 +1,253 @@
+# Transcript-app
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!--************* Scripts ******************-->
+
+<script src="jquery-1.12.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<title>TranscriptMe!</title>
+
+<!--************** Jquery stuff ****************-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--************** Menu Style ****************-->
+
+<style>
+
+h1 {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: center;
+    height: 0%;
+    overflow: auto;
+
+
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #d9b3ff;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #f2e6ff;
+    color: white;
+}
+</style>
+
+<!--**************Table Style****************-->
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #d9b3ff;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2e6ff;
+}
+</style>
+
+
+</head>
+
+<!---************ Menu coding & Body Start **************-->
+
+<body> 
+
+<center>
+  <div data-role="header">
+    <h1>Welcome to TranscriptMe!</h1>
+  </div>
+</center>
+
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Messages</a></li>
+  <li><a href="#contact">Account</a></li>  
+  <li><a href="#logout">Logout</a></li>  
+
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+<!---************ Mock Table **************-->
+
+<p>
+<p>
+<p>
+
+<table>
+  <tr>
+    <th>Class</th>
+    <th>Teacher</th>
+    <th>Grade</th>
+    <th>Credits</th>
+    <th>On track?</th>
+  </tr>
+  <tr>
+    <td>Algebra 1</td>
+    <td>Ms. Bradley</td>
+    <td>91</td>
+    <td>1.00</td>
+    <td>Yes</td>
+  </tr>  
+  <tr>
+    <td>Geometry</td>
+    <td>Mr. Bill</td>
+    <td>92</td>
+    <td>1.00</td>
+    <td>Yes</td>
+  </tr>
+<tr>
+    <td>Algebra 11/Trig</td>
+    <td>Ms. Grech</td>
+    <td>87</td>
+    <td>1.00</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <th>Class</th>
+    <th>Teacher</th>
+    <th>Grade</th>
+    <th>Credits</th>
+    <th>On track?</th>
+  </tr>
+ <tr>
+    <td>Living Envierment</td>
+    <td>Ms. Brathwite</td>
+    <td>91</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr>
+ <tr>
+    <td>Earth Science</td>
+    <td>Ms. Shumer</td>
+    <td>87</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr> <tr>
+    <td>Chemistry</td>
+    <td>Ms. Easter</td>
+    <td>58</td>
+    <td>1.00</td>
+    <td>No</td>
+ </tr>
+  <tr>
+    <th>Class</th>
+    <th>Teacher</th>
+    <th>Grade</th>
+    <th>Credits</th>
+    <th>On track?</th>
+  </tr>
+ <tr>
+    <td>Global history 1</td>
+    <td>Ms. Scarbourogh</td>
+    <td>83</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr> <tr>
+    <td>Global History 11</td>
+    <td>Mr. Otto</td>
+    <td>85</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr> <tr>
+    <td>U.S History</td>
+    <td>Ms. Mcdonald</td>
+    <td>90</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <th>Class</th>
+    <th>Teacher</th>
+    <th>Grade</th>
+    <th>Credits</th>
+    <th>On track?</th>
+  </tr>
+ <tr>
+    <td>English 1</td>
+    <td>Ms. Blanding</td>
+    <td>87</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr> <tr>
+    <td>English 11</td>
+    <td>Ms. Marcus</td>
+    <td>82</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr> 
+<tr>
+    <td>English 111</td>
+    <td>Ms. Marcus</td>
+    <td>81</td>
+    <td>1.00</td>
+    <td>Yes</td>
+ </tr>
+</table>
+
+
+<button class="w3-btn w3-red w3-text-shadow">Shadow</button><button class="w3-btn w3-red w3-text-shadow">Shadow</button>
+</div>
+
+
+
+
+
+<!---************ Footer **************-->
+
+  <div data-role="footer">
+    <h2>TranscriptMe!©2016</h2>
+  </div>
+
+
+</body>
+<!---************ End of body **************-->
+
+</html>
